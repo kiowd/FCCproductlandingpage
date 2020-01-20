@@ -1,0 +1,589 @@
+@import url("https://fonts.googleapis.com/css?family=Charmonman|Mansalva|Shadows+Into+Light&display=swap");
+@import
+  url('https://fonts.googleapis.com/css?family=Crimson+Text&display=swap');
+@import 
+url('https://fonts.googleapis.com/css?family=Grenze|Libre+Baskerville&display=swap');   
+@import url("https://fonts.googleapis.com/css?family=Cormorant+Infant&display=swap");
+
+
+html {
+  font-size: 10px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  position: relative;
+  float: left;
+  text-align: left;
+  width: 160px;
+  height: 90px;
+  /*border: 1px dotted red;	*/
+  border-radius: 60px;
+  margin-left: 85px;
+  margin-right: 10px;
+  padding: 0;
+}
+
+.header {
+  background-color: #fff;
+  border: 2px double yellow;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  /*overflow: hidden;*/
+  display: flex;
+  z-index: 1;
+}
+
+.navlist {
+  display: inline-block;
+  padding-left: 100px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+/*ul {
+
+   flex-direction: column;
+   justify-content: space-between;
+   padding:0;
+
+}*/
+
+.navbar .navlist .nav-link {
+  text-decoration: none;
+}
+
+.navbar .navlist .nav-link:hover {
+  color: #556b2f;
+  font-weight: bold;
+}
+
+.navbar .bar {
+  /*display: block;*/
+  display: none;
+}
+
+/* .navbar .bar:hover ul {
+  display: block;
+}
+ */
+.navbar .navlist {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #000;
+  list-style-type: none;
+  text-align: center;
+}
+
+.navbar .bar a {
+  text-decoration: none;
+}
+
+.homePage {
+  
+    background-image: url(https://images.unsplash.com/photo-1518623001395-125242310d0c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1504&q=80);
+  background-size: cover;
+  background-attachment: fixed;
+  margin-top: 90px;
+  padding-bottom: 50px;
+  height: 800px;
+}
+
+.homePage-content .homePage-heading {
+  position: relative;
+  margin-left: 25%;
+  font-family: "Shadows Into Light", cursive;
+  font-family: 'Grenze', serif;
+  font-size: 8rem;
+  letter-spacing: 1rem;
+  color: midnightblue;
+  padding-top: 5%;
+}
+
+.homePage-content p::first-letter {
+	  font-size: 5rem;
+    color: mediumvioletred;
+ }
+
+.homePage-content .homePage-paragraph {
+  position: absolute;
+  padding: 5px;
+  margin-top: 50px;
+  margin-left: 25%;
+  word-spacing: 1rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: black;
+  background-color: mintcream;
+  opacity: 0.8;
+  border-radius: 30px;
+  width: 55%;
+  height: 35%;
+}
+
+input[type="submit"], .readmore {
+  border: none;
+  background-color: deepskyblue;
+  color: darkslategray;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 5px 15px;
+  font-size: 2rem;
+  border-radius: 10px;
+  box-shadow: 6px 6px 1px grey;
+/*   opacity: 0.9; */
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+/* tesing flexbox grandchild */
+
+.parent-container {
+  display: flex;
+  /* flex: 1 0 100%; */
+  border: 2px solid rosybrown;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.child-container {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid darkorange;
+  padding: 10px;
+  margin: 10px;
+  height: 500px;
+}
+
+.baby-of-child-container1 {
+  flex: 1;
+  /* border: 2px dashed darkseagreen; */
+  padding: 10px;
+  margin: 10px;
+  height: 100px;
+}
+
+.baby-of-child-container1 img {
+  float: left;
+  margin-right: 5px;
+}
+
+.aboutPage-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  letter-spacing: 1rem;
+}
+
+.aboutPage-paragraph {
+  font-size: 1.6rem;
+  line-height: 25px;
+}
+
+/*Video*/
+.video {
+  margin: 12px 25px 40px 25px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* External Link and UnorderLists */
+
+.externalLink{
+    display:flex;
+    flex-flow: column;
+    justify-content: center;
+    /*align-content: center;*/
+    align-items: center;
+    border:4px double red;
+    background-color: coral;
+    border-radius: 15px 50px;
+}
+
+.video-heading {
+    
+    background-color: yellow;
+    border-radius: 15px 10px;
+    font-size: 3.5rem;
+    font-family: 'Shadows Into Light', cursive; 
+  
+}
+
+.ex-links{
+
+    display: block;
+    word-spacing: 2rem;
+    font-size: 2rem;
+    line-height: 4rem;
+    color: white;
+    margin-right: 50px;
+    padding-left: 2px;
+}
+
+.ex-links::before {
+  content: "*";  /*Insert content that looks like bullets*/ 
+  padding-right: 8px;
+  color: blue; /* Or a color you prefer */
+}
+
+.readmore a {
+    text-decoration:none;
+}
+.readmore a:hover {
+    color: lawngreen;
+}
+
+
+/*Product Section*/
+.productPage {
+  /*background-color: #F0F8FF;*/
+  /*border: 1px solid blue;*/
+  margin-top: -29px;
+}
+
+.vans-heading {
+  font-family: "Mansalva", cursive;
+  color: #a0522d;
+  font-size: 2.5rem;
+  text-align: center;
+  /*border: 1px solid blue;*/
+  padding-top: 30px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.row .column {
+  flex-basis: 30%;
+  padding: 10px;
+  margin-left: 60px;
+  height: 300px;
+}
+
+.column img {
+  border-radius: 20px;
+  box-shadow: 6px 6px 1px #778899;
+}
+
+.select {
+  font-family: 'Crimson Text', serif;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  background-color: #ffdead;
+  margin: 10px 130px;
+}
+
+/* Footer-Contact */
+
+.footer {
+  /*background-color: #696969;*/
+  overflow: hidden;
+  position: relative;
+  color: #fff;
+  text-align: center;
+  font-size: 3rem;
+  padding: 5px;
+  margin: 9px;
+}
+
+/* footer .r2 {
+  position: absolute;
+  margin: -55px 200px;
+}
+
+footer .p-two1 {
+  position: absolute;
+  margin-left: 40%;
+  padding: 1px 10px;
+} */
+
+.footer .socialmedia {
+  margin: 15px -50px;
+  /*   font-size: 4rem; */
+}
+
+.footer .contact-heading {
+/*   font-family: "Charmonman", cursive; */
+/*   font-family: 'Cormorant Infant', serif;
+  font-family: 'Handlee', cursive; */
+  font-size: 6rem;
+  margin: 1px;
+  padding: 25px;
+/*   word-spacing: 1rem;
+  letter-spacing: 1rem; */
+}
+
+.footer .contact-update, .copyRight-year {
+/*   font-family: 'Handlee', cursive; */
+/*   font-family: "Mansalva", cursive; */
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.9rem;
+  color: #000;
+}
+
+.footer .copyRight-year {
+  position: relative;
+  margin-bottom: 3%;
+  font-family: "Shadows Into Light", cursive;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  letter-spacing: 0.5rem;
+  float: left;
+}
+
+#form input[type="email"] {
+  max-width: 200px;
+  width: 100%;
+  padding: 15px;
+  border: 0;
+  border-radius: 30px;
+}
+
+#form input[type="submit"] {
+  max-width: 150px;
+  width: 100%;
+  height: 45px;
+  margin: 15px 0;
+  border: 0;
+  border-radius: 30px;
+  background-color: #1e90ff;
+}
+
+#form input[type="submit"]:hover {
+  background-color: aquamarine;
+  transition: background-color 1s;
+}
+
+.dotted-line {
+  width: 30%;
+  border: 1px dashed black;
+}
+
+.background-double {
+  position: absolute;
+  height: 110%;
+  width: 130%;
+  z-index: -1;
+  background: linear-gradient(to right, #f4a460 4%, #daa520 20%, #cd853f 70%);
+  transform: rotateZ(-15deg);
+  transform-origin: top left;
+  box-shadow: 10px 10px 10px #696969;
+}
+
+@media screen and (max-width: 600px) {
+  .homePage .homePage-content {
+    margin-top: -55px;
+  }
+  .homePage-content .homePage-heading {
+    font-family: "Mansalva", cursive;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    font-size: 3.5rem;
+/*     border: 2px solid navajowhite; */
+    margin: 2px; 
+  }
+
+  .homePage-content .homePage-paragraph {
+    width: auto;
+    height: auto;
+    padding: 15px;
+    margin-left: 5%;
+    margin-top: 70px;
+    color: mistyrose;
+    background-color: black;
+  }
+
+/*   .r2 {
+    background-color: #008080;
+    padding: 5px 0px 5px 30px;
+    margin: 0;
+  }
+
+  input[type="button"],
+  input[type="text"] {
+    border: none;
+    background-color: #ffd700;
+    color: #ffffff;
+  } */
+
+  .homePage {
+    margin-top: 40%;
+  }
+
+  .homePage-content .homePage-heading {
+    font-family: 'Cormorant Infant', serif;
+    font-size: 500%;
+    color: #ff4500;
+    padding-top: 25px;
+    text-align: center;
+  }
+
+  .header {
+    flex-direction: column;
+    position: fixed;
+  }
+
+  .logo {
+    margin-left: 200px;
+  }
+
+  .mobile_navlist {
+    border: 2px solid white;
+    width: 100%;
+    padding-left: 15px;
+  }
+
+  .navbar {
+    padding-right: 20vw;
+  }
+
+  .navbar .navlist {
+    display: none;
+  }
+
+  a:hover {
+    background-color: #00ced1;
+  }
+
+  .navbar .bar {
+    display: block;
+  }
+  
+  .navbar .bar .mobile_navbar {
+    display: none;
+  }
+
+  .navbar .bar:hover .mobile_navbar{
+    display: block;
+    line-height: 5rem;
+  }
+  
+ .mobile_navbar .mobile_navlist {
+    
+  list-style-type: none;
+  
+}
+
+      /*Product*/
+  
+  .vans-heading h1 {
+    color: darkslategray;
+    border-left: 4px double;
+    border-right: 4px double;
+    padding: 20px;
+    margin-left:50px;
+    margin-right:50px;
+  }
+
+  .row {
+    flex-direction: column;    
+    background-color: antiquewhite;
+  }
+
+  .column img {
+    padding: 0px 40px;
+    margin-left: 10px;
+    border: 2px double black;
+  }
+
+  .select {
+    margin-left: 200px;
+  }
+
+  /* tesing flexbox grandchild */
+
+  .parent-container {
+    flex-flow: column;
+    /* flex: 1 0 100%; */
+    /* border: 2px dotted rosybrown; */
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .child-container {
+    flex-flow: column;
+    justify-content: space-between;
+    /*     border: 2px solid darkorange; */
+    padding: 5px;
+    /*     margin: 1px; */
+    height: 300px;
+  }
+
+  .baby-of-child-container1 {
+    flex: 1;
+    /*     border: 2px dashed darkseagreen; */
+    font-size: 2rem;
+    line-height: 20px;
+    padding: 1px;
+    margin: 2px;
+    height: 300px;
+  }
+
+  .video {
+    flex-flow: column;
+       
+  }
+
+  .video iframe {
+    width: 100%;
+  }
+
+  .externalLink {
+    margin-top: 10px;
+     
+  }
+
+  /*Product*/
+  
+/*   .column {
+    flex-direction: column;
+    
+  } */
+
+  /*Footer*/
+
+  .footer {
+    margin-top: 1%;
+    height: 400px;
+  }
+
+  .footer .socialmedia {
+    margin: 10px;
+  }
+
+  .footer .contact-heading {
+    font-family: "Charmonman", cursive;
+    font-size: 5rem;
+    margin: 1px;
+    word-spacing: 1rem;
+  }
+
+  .footer .contact-update {
+    font-family: "Mansalva", cursive;
+    font-size: 1.7rem;
+  }
+
+  
+
+  .footer .copyRight-year {
+    position: absolute;
+    font-family: "Shadows Into Light", cursive;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    letter-spacing: 0.5rem;
+    margin: 1px 1px;
+  }
+}
